@@ -1,12 +1,14 @@
-package datastructure.sorting;
+package data.structure.sorting;
 
-public class BubbleSort extends SortAlgorithms {
+import random.array.RandomArray;
+
+public class BubbleSort extends RandomArray {
 
 	public BubbleSort() {
 		super();
 	}
 
-	private int[] sort(int[] unSortedArray) {
+	public int[] sort(int[] unSortedArray) {
 		int aux = 0;
 		for (int i = 0; i < unSortedArray.length; i++) {
 			for (int j = i + 1; j < unSortedArray.length; j++) {

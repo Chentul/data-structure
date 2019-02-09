@@ -1,12 +1,14 @@
-package datastructure.sorting;
+package data.structure.sorting;
 
-public class InsertionSort extends SortAlgorithms {
+import random.array.RandomArray;
+
+public class InsertionSort extends RandomArray {
 
 	public InsertionSort() {
 		super();
 	}
 
-	private int[] sort(int[] unSortedArray) {
+	public int[] sort(int[] unSortedArray) {
 		for(int i = 1; i < unSortedArray.length; i++) {
 			int key = unSortedArray[i];
 			int j = i - 1;

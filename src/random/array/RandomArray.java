@@ -1,8 +1,8 @@
-package datastructure.sorting;
+package random.array;
 
 import java.util.Random;
 
-public class SortAlgorithms {
+public class RandomArray {
 
 	public Random rand;
 	public int[] randomArray;
@@ -10,11 +10,27 @@ public class SortAlgorithms {
 	public int min;
 	public String PREFIX;
 
-	public SortAlgorithms() {
+	public RandomArray() {
 		this.rand = new Random();
 		this.randomArray = new int[10];
 		this.max = 25;
 		this.min = 1;
+		this.PREFIX = " ";
+	}
+	
+	public RandomArray(int size) {
+		this.rand = new Random();
+		this.randomArray = new int[size];
+		this.max = 25;
+		this.min = 1;
+		this.PREFIX = " ";
+	}
+	
+	public RandomArray(int size, int max, int min) {
+		this.rand = new Random();
+		this.randomArray = new int[size];
+		this.max = max;
+		this.min = min;
 		this.PREFIX = " ";
 	}
 
